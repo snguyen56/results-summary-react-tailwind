@@ -51,7 +51,7 @@ function App() {
               </div>
             ))}
           </div>
-          <button className="rounded-full bg-dark-gray-blue p-[14px] mt-6 md:mt-10 text-white/90 text-[18px] font-bold">
+          <button className="rounded-full bg-dark-gray-blue p-[14px] mt-6 md:mt-10 text-white/90 text-[18px] font-bold hover:bg-gradient-to-b from-light-slate-blue to-light-royal-blue">
             Continue
           </button>
         </div>
