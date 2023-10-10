@@ -15,12 +15,20 @@ function App() {
         Reaction 80 / 100 Memory 92 / 100 Verbal 61 / 100 Visual 72 / 100
       </div>
       <button>Continue</button>
-      <div className="attribution">
+      <div className=" text-center text-[11px]">
         Challenge by{" "}
-        <a href="https://www.frontendmentor.io?ref=challenge" target="_blank">
+        <a
+          href="https://www.frontendmentor.io?ref=challenge"
+          target="_blank"
+          className="text-attribution"
+        >
           Frontend Mentor
         </a>
-        . Coded by <a href="#">Your Name Here</a>.
+        . Coded by{" "}
+        <a href="#" className="text-attribution">
+          Your Name Here
+        </a>
+        .
       </div>
     </main>
   );
