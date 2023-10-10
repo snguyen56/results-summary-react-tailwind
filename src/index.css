@@ -10,3 +10,7 @@
     url("./assets/fonts/HankenGrotesk-VariableFont_wght.ttf")
       format("truetype-variations");
 }
+
+body {
+  font-family: HankenGrotesk;
+}
