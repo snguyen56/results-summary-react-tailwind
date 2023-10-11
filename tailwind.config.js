@@ -15,9 +15,12 @@ export default {
         white: "hsl(0, 0%, 100%, <alpha-value>)",
         "pale-blue": "hsl(221, 100%, 96%, <alpha-value>)",
         "light-lavender": "hsl(241, 100%, 89%, <alpha-value>)",
-        'attribution': "hsl(228, 45%, 44%, <alpha-value>)",
+        "attribution": "hsl(228, 45%, 44%, <alpha-value>)",
         "dark-gray-blue": "hsl(224, 30%, 27%, <alpha-value>)",
       },
+    },
+    screens: {
+      "md": "736px",
     },
   },
   plugins: [],
