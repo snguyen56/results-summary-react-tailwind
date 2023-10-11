@@ -25,7 +25,10 @@ function Summary() {
             className={`${dataBGColors[index]} ${dataColors[index]} flex items-center justify-between rounded-lg px-[16px] py-[16px] md:px-[16px] md:py-[15px] `}
           >
             <div className="flex gap-3">
-              <img src={data.icon} alt={data.category} />
+              <img
+                src={`${import.meta.env.BASE_URL}${data.icon}`}
+                alt={data.category}
+              />
               <h3 className=" font-semibold">{data.category}</h3>
             </div>
             <p className="font-bold text-dark-gray-blue/50">
