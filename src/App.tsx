@@ -16,7 +16,7 @@ const dataColors = [
 function App() {
   return (
     <main className="md:grid md:place-items-center h-screen">
-      <div className="md:grid md:grid-cols-2 md:shadow-2xl md:rounded-[2rem]  md:w-[46rem] md:h-[512px]">
+      <div className="md:grid md:grid-cols-2 md:shadow-2xl md:shadow-pale-blue md:rounded-[2rem]  md:w-[46rem] md:h-[512px]">
         <div className="min-h-[356px] bg-gradient-to-b from-light-slate-blue to-light-royal-blue text-center text-light-lavender rounded-b-[2rem] md:rounded-[2rem] md:py-[35px]">
           <h1 className="md:text-[24px] font-bold">Your Result</h1>
           <p>
