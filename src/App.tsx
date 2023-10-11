@@ -16,7 +16,7 @@ const dataColors = [
 function App() {
   return (
     <main className="md:grid md:place-items-center h-screen">
-      <div className="md:grid md:grid-cols-2 md:shadow-2xl md:shadow-black md:rounded-[2rem]  md:w-[46rem] md:h-[512px]">
+      <div className="md:grid md:grid-cols-2 md:shadow-2xl md:shadow-pale-blue md:rounded-[2rem] md:w-[46rem] md:h-[512px]">
         <div className="flex flex-col justify-around items-center md:justify-between min-h-[356px] bg-gradient-to-b from-light-slate-blue to-light-royal-blue text-center text-light-lavender/90 rounded-b-[2rem] md:rounded-[2rem] p-[12px] md:py-[35px]">
           <h1 className="md:text-[24px] font-bold mb-1 md:mb-[16px]">
             Your Result
@@ -43,11 +43,10 @@ function App() {
           <h2 className=" md:text-[24px] text-dark-gray-blue font-bold md:pb-[26px] pb-[20px] px-[2px] md:px-0 ">
             Summary
           </h2>
-          <div className="flex flex-col gap-[18px] text-base md:text-[18px]">
-            {/* Reaction 80 / 100 Memory 92 / 100 Verbal 61 / 100 Visual 72 / 100 */}
+          <div className="flex flex-col gap-[17px] md:gap-[18px] text-base md:text-[18px]">
             {data.map((data, index) => (
               <div
-                className={`${dataBGColors[index]} ${dataColors[index]} flex items-center justify-between rounded-lg px-[14px] py-[16px] md:px-[16px] md:py-[15px] `}
+                className={`${dataBGColors[index]} ${dataColors[index]} flex items-center justify-between rounded-lg px-[16px] py-[16px] md:px-[16px] md:py-[15px] `}
               >
                 <div className="flex gap-3">
                   <img src={data.icon} alt={data.category} />
@@ -60,12 +59,12 @@ function App() {
               </div>
             ))}
           </div>
-          <button className="rounded-full bg-dark-gray-blue p-[14px] mt-6 md:mt-11 text-white/90 font-bold hover:bg-gradient-to-b from-light-slate-blue to-light-royal-blue">
+          <button className="rounded-full bg-dark-gray-blue p-[14px] mt-6 md:mt-11 text-white/90 font-bold hover:bg-gradient-to-b focus:bg-gradient-to-b from-light-slate-blue to-light-royal-blue">
             Continue
           </button>
         </div>
       </div>
-      {/* <div className="text-center text-[11px]">
+      <div className="text-center text-[11px] absolute w-full bottom-2 md:bottom-44">
         Challenge by{" "}
         <a
           href="https://www.frontendmentor.io?ref=challenge"
@@ -75,11 +74,15 @@ function App() {
           Frontend Mentor
         </a>
         . Coded by{" "}
-        <a href="#" className="text-attribution">
-          Your Name Here
+        <a
+          href="https://github.com/snguyen56"
+          target="_blank"
+          className="text-attribution"
+        >
+          Steven Nguyen
         </a>
         .
-      </div> */}
+      </div>
     </main>
   );
 }

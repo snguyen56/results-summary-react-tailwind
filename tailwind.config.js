@@ -19,6 +19,9 @@ export default {
         "dark-gray-blue": "hsl(224, 30%, 27%, <alpha-value>)",
       },
     },
+    screens: {
+      "md": "736px",
+    },
   },
   plugins: [],
 };
