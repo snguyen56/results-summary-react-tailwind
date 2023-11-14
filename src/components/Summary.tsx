@@ -1,19 +1,16 @@
-import data from "../../data.json";
+type resultsData = {
+  category: string;
+  score: number;
+  icon: string;
+};
 
-const dataBGColors = [
-  "bg-light-red/5",
-  "bg-orangey-yellow/5",
-  "bg-green-teal/5",
-  "bg-cobalt-blue/5",
-];
-const dataColors = [
-  "text-light-red",
-  "text-orangey-yellow",
-  "text-green-teal",
-  "text-cobalt-blue",
-];
+type Props = {
+  data: resultsData[];
+  dataBGColors: string[];
+  dataColors: string[];
+};
 
-function Summary() {
+function Summary({ data, dataBGColors, dataColors }: Props) {
   return (
     <div className="flex flex-col px-[30px] py-[22px] md:flex md:flex-col md:px-[40px] md:py-[35px]">
       <h2 className=" px-[2px] pb-[20px] font-bold text-dark-gray-blue md:px-0 md:pb-[26px] md:text-[24px] ">
